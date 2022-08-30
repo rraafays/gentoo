@@ -1,0 +1,48 @@
+# build transmission without gui (cli only)
+net-p2p/transmission -gtk -qt5
+
+# builds zathura with pdf support
+app-text/zathura pdf
+
+# enables both nvidia and amd drm libraries
+x11-libs/libdrm video_cards_nvidia video_cards_amdgpu
+
+# builds pipewire as a sound-server
+media-video/pipewire sound-server
+# builds pulseaudio without a daemon
+media-sound/pulseaudio -daemon
+
+# builds glog with gflags
+dev-cpp/glog gflags
+
+# required by x11-drivers/nvidia-drivers
+# required by games-util/mangohud
+media-libs/libglvnd abi_x86_32
+
+# required by virtual/opengl
+# required by games-util/steam-client-meta
+# required by games-util/steam-meta
+media-libs/mesa abi_x86_32
+
+# required by media-libs/mesa
+# required by app-office/libreoffice
+x11-libs/libxcb abi_x86_32
+
+# required by media-libs/mesa
+# required by app-office/libreoffice
+app-arch/zstd abi_x86_32
+
+# required by sys-devel/llvm
+# required by media-libs/mesa
+# required by app-office/libreoffice
+sys-libs/ncurses abi_x86_32
+
+# required by sys-devel/llvm
+# required by media-libs/mesa
+# required by app-office/libreoffice
+dev-libs/libxml2 abi_x86_32
+
+# required by games-util/steam-launcher
+# required by games-util/steam-meta
+x11-libs/libXau abi_x86_32
+
