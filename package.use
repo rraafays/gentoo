@@ -1,48 +1,39 @@
-# build transmission without gui (cli only)
-net-p2p/transmission -gtk -qt5
+# vim:fileencoding=utf-8:foldmethod=marker
 
-# build zathura with pdf support
-app-text/zathura pdf
+# Audio & Video
 
-# enables both nvidia and amd drm libraries
-x11-libs/libdrm video_cards_nvidia video_cards_amdgpu
-
-# build pipewire as a sound-server
+# builds pipewire as a sound-server and pulseaudio without a daemon
 media-video/pipewire sound-server
-# build pulseaudio without a daemon
 media-sound/pulseaudio -daemon
 
-# build glog with gflags
-dev-cpp/glog gflags
-
-# required by x11-drivers/nvidia-drivers
-# required by games-util/mangohud
-media-libs/libglvnd abi_x86_32
-
-# required by virtual/opengl
-# required by games-util/steam-client-meta
-# required by games-util/steam-meta
+# builds x11-drivers/nvidia-drivers & media-libs/mesa with 32bit support for steam
+x11-drivers/nvidia-drivers abi_x86_32
 media-libs/mesa abi_x86_32
 
-# required by media-libs/mesa
-# required by app-office/libreoffice
+# various dependencies required by media-libs/mesa & x11-drivers/nvidia-drivers
+app-arch/zstd abi_x86_32
+dev-libs/expat abi_x86_32
+dev-libs/libffi abi_x86_32
+dev-libs/libxml2 abi_x86_32
+dev-libs/libpcre2 abi_x86_32 pcre32
+media-libs/libglvnd abi_x86_32
+sys-libs/zlib abi_x86_32 minizip
+sys-libs/ncurses abi_x86_32
+virtual/opengl abi_x86_32
+x11-libs/libX11 abi_x86_32
+x11-libs/libXext abi_x86_32
+x11-libs/libXfixes abi_x86_32
+x11-libs/libXrandr abi_x86_32
+x11-libs/libXrender abi_x86_32
+x11-libs/libXau abi_x86_32
 x11-libs/libxcb abi_x86_32
 
-# required by media-libs/mesa
-# required by app-office/libreoffice
-app-arch/zstd abi_x86_32
+# Networking
 
-# required by sys-devel/llvm
-# required by media-libs/mesa
-# required by app-office/libreoffice
-sys-libs/ncurses abi_x86_32
+# builds transmission without gui (cli only)
+net-p2p/transmission -gtk -qt5
 
-# required by sys-devel/llvm
-# required by media-libs/mesa
-# required by app-office/libreoffice
-dev-libs/libxml2 abi_x86_32
+# Misc
 
-# required by games-util/steam-launcher
-# required by games-util/steam-meta
-x11-libs/libXau abi_x86_32
-
+# builds zathura with pdf support
+app-text/zathura pdf
