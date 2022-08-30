@@ -1,18 +1,18 @@
 # build transmission without gui (cli only)
 net-p2p/transmission -gtk -qt5
 
-# builds zathura with pdf support
+# build zathura with pdf support
 app-text/zathura pdf
 
 # enables both nvidia and amd drm libraries
 x11-libs/libdrm video_cards_nvidia video_cards_amdgpu
 
-# builds pipewire as a sound-server
+# build pipewire as a sound-server
 media-video/pipewire sound-server
-# builds pulseaudio without a daemon
+# build pulseaudio without a daemon
 media-sound/pulseaudio -daemon
 
-# builds glog with gflags
+# build glog with gflags
 dev-cpp/glog gflags
 
 # required by x11-drivers/nvidia-drivers
