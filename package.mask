@@ -1,0 +1,5 @@
+# Development
+  
+  # emerges nodejs (lts) for development
+  >net-libs/nodejs-16.17.0
+#

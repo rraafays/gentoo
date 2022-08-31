@@ -1,39 +1,47 @@
-# vim:fileencoding=utf-8:foldmethod=marker
-
 # Audio & Video
 
-# builds pipewire as a sound-server and pulseaudio without a daemon
-media-video/pipewire sound-server
-media-sound/pulseaudio -daemon
+  # builds pipewire as a sound-server and pulseaudio without a daemon
+  media-video/pipewire sound-server
+  media-sound/pulseaudio -daemon
 
-# builds x11-drivers/nvidia-drivers & media-libs/mesa with 32bit support for steam
-x11-drivers/nvidia-drivers abi_x86_32
-media-libs/mesa abi_x86_32
+  # builds x11-drivers/nvidia-drivers & media-libs/mesa with 32bit support for steam
+  x11-drivers/nvidia-drivers abi_x86_32
+  media-libs/mesa abi_x86_32
 
-# various dependencies required by media-libs/mesa & x11-drivers/nvidia-drivers
-app-arch/zstd abi_x86_32
-dev-libs/expat abi_x86_32
-dev-libs/libffi abi_x86_32
-dev-libs/libxml2 abi_x86_32
-dev-libs/libpcre2 abi_x86_32 pcre32
-media-libs/libglvnd abi_x86_32
-sys-libs/zlib abi_x86_32 minizip
-sys-libs/ncurses abi_x86_32
-virtual/opengl abi_x86_32
-x11-libs/libX11 abi_x86_32
-x11-libs/libXext abi_x86_32
-x11-libs/libXfixes abi_x86_32
-x11-libs/libXrandr abi_x86_32
-x11-libs/libXrender abi_x86_32
-x11-libs/libXau abi_x86_32
-x11-libs/libxcb abi_x86_32
+  # various dependencies required by media-libs/mesa & x11-drivers/nvidia-drivers
+  app-arch/zstd abi_x86_32
+  dev-libs/expat abi_x86_32
+  dev-libs/libffi abi_x86_32
+  dev-libs/libxml2 abi_x86_32
+  dev-libs/libpcre2 abi_x86_32 pcre32
+  media-libs/libglvnd abi_x86_32
+  sys-libs/zlib abi_x86_32 minizip
+  sys-libs/ncurses abi_x86_32
+  virtual/opengl abi_x86_32
+  x11-libs/libX11 abi_x86_32
+  x11-libs/libXext abi_x86_32
+  x11-libs/libXfixes abi_x86_32
+  x11-libs/libXrandr abi_x86_32
+  x11-libs/libXrender abi_x86_32
+  x11-libs/libXau abi_x86_32
+  x11-libs/libxcb abi_x86_32
+#
+
+# Development
+  
+  # builds nodejs without npm because i use yarn
+  net-libs/nodejs -npm
+# 
 
 # Networking
 
-# builds transmission without gui (cli only)
-net-p2p/transmission -gtk -qt5
+  # builds transmission without gui (cli only)
+  net-p2p/transmission -gtk -qt5
+#
 
 # Misc
 
-# builds zathura with pdf support
-app-text/zathura pdf
+  # builds zathura with pdf support
+  app-text/zathura pdf
+#
+
