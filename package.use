@@ -27,12 +27,6 @@
   x11-libs/libxcb abi_x86_32
 #
 
-# Development
-  
-  # builds nodejs without npm because i use yarn
-  net-libs/nodejs -npm
-# 
-
 # Networking
 
   # builds transmission without gui (cli only)
