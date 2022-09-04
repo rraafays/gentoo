@@ -36,7 +36,10 @@
 
 # Misc
 
-  # builds zathura with pdf support
+  # builds app-text/zathura with pdf support
   app-text/zathura pdf
-#
 
+  # builds sys-devel/gcc with objc support and gnustep-base/gnustep-make with objc exception support for app-arch/unar
+  sys-devel/gcc objc
+  gnustep-base/gnustep-make native-exceptions
+#
