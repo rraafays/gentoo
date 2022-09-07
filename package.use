@@ -32,6 +32,9 @@
 
   # builds transmission without gui (cli only)
   net-p2p/transmission -gtk -qt5
+
+  # builds bluez with extra utilities
+  net-wireless/bluez deprecated
 #
 
 # Misc
