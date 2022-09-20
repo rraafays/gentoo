@@ -4,8 +4,9 @@ sys-kernel/linux-firmware linux-fw-redistributable no-source-code
 # required by nvidia-drivers 
 x11-drivers/nvidia-drivers NVIDIA-r2
 
-# required by steam-meta 
+# required by steam-meta & steamcmd
 games-util/steam-launcher ValveSteamLicense
+games-server/steamcmd Steam
 
 # required for unar
 app-arch/unrar unRAR
