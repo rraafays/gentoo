@@ -35,6 +35,9 @@
 
   # builds bluez with extra utilities
   net-wireless/bluez deprecated
+
+  # required by www-client/brave-bin net-print/cups, net-print/cups-filters & dev-java/openjdk
+  app-text/ghostscript-gpl cups
 #
 
 # Misc
@@ -45,4 +48,7 @@
   # builds sys-devel/gcc with objc support and gnustep-base/gnustep-make with objc exception support for app-arch/unar
   sys-devel/gcc objc
   gnustep-base/gnustep-make native-exceptions
+
+  # builds media-libs/libsdl2 with force feedback
+  media-libs/libsdl2 haptic
 #
