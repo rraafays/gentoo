@@ -26,6 +26,7 @@
   x11-libs/libXau abi_x86_32
   x11-libs/libxcb abi_x86_32
   x11-libs/libdrm abi_x86_32
+  sys-devel/llvm abi_x86_32
 #
 
 # Networking
@@ -52,3 +53,5 @@
   # builds media-libs/libsdl2 with force feedback
   media-libs/libsdl2 haptic
 #
+
+
