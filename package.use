@@ -30,6 +30,19 @@
   sys-devel/llvm abi_x86_32
 #
 
+# Development
+  
+  # builds sys-devel/gcc with objc support and gnustep-base/gnustep-make with objc exception support for app-arch/unar
+  sys-devel/gcc objc
+  gnustep-base/gnustep-make native-exceptions
+
+  # required by dev-java/openjdk
+  app-text/ghostscript-gpl cups
+
+  # installs a symlink which points to dotnet binary
+  dev-dotnet/dotnet-sdk-bin dotnet-symlink
+# 
+
 # Networking
 
   # builds transmission without gui (cli only)
@@ -47,13 +60,6 @@
   # builds app-text/zathura with pdf support
   app-text/zathura pdf
 
-  # builds sys-devel/gcc with objc support and gnustep-base/gnustep-make with objc exception support for app-arch/unar
-  sys-devel/gcc objc
-  gnustep-base/gnustep-make native-exceptions
-
   # builds media-libs/libsdl2 with force feedback
   media-libs/libsdl2 haptic
-
-  # required by dev-java/openjdk
-  app-text/ghostscript-gpl cups
 #
