@@ -1,2 +1,6 @@
-# required by rpcs3
-games-emulation/rpcs3-9999 **
+# required by games-emulation/rpcs3
+games-emulation/rpcs3 **
+# required by dev-dotnet/dotnetcore-sdk-bin
+dev-dotnet/dotnetcore-sdk-bin **
+# required by dev-dotnet/dotnetcore-sdk-bin
+dev-dotnet/dotnetcore-sdk-bin-common **

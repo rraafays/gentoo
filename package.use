@@ -1,8 +1,7 @@
 # Audio & Video
 
-  # builds pipewire as a sound-server and pulseaudio without a daemon
-  media-video/pipewire sound-server
-  media-sound/pulseaudio -daemon
+  # builds pulseaudio as a daemon and with service support
+  media-sound/pulseaudio daemon system-wide
 
   # builds x11-drivers/nvidia-drivers & media-libs/mesa with 32bit support for steam
   x11-drivers/nvidia-drivers abi_x86_32
@@ -41,9 +40,6 @@
   # required by dev-java/openjdk
   app-text/ghostscript-gpl cups
 
-  # installs a symlink which points to dotnet binary
-  dev-dotnet/dotnet-sdk-bin dotnet-symlink
-
   # required by dev-php/composer
   dev-lang/php curl
 
@@ -80,6 +76,7 @@
   # required by www-client/librewolf
   media-libs/libvpx postproc
   dev-libs/icu abi_x86_32
+  x11-libs/libXdmcp abi_x86_32
 #
 
 # Misc
@@ -89,4 +86,7 @@
 
   # builds media-libs/libsdl2 with force feedback
   media-libs/libsdl2 haptic
+
+  # builds sys-libs/glibc with compatibility for proton
+  sys-libs/glibc hash-sysv-compat
 #

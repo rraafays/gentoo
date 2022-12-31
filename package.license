@@ -10,3 +10,6 @@ games-server/steamcmd Steam
 
 # required for unar
 app-arch/unrar unRAR
+
+# required by vscode
+app-editors/vscode Microsoft-vscode
