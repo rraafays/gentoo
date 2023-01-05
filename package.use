@@ -37,6 +37,9 @@
   sys-devel/gcc objc
   gnustep-base/gnustep-make native-exceptions
 
+  # builds net-libs/libwebsockets with asynchronous input output support
+  net-libs/libwebsockets libuv
+
   # required by dev-java/openjdk
   app-text/ghostscript-gpl cups
 
@@ -89,4 +92,9 @@
 
   # builds sys-libs/glibc with compatibility for proton
   sys-libs/glibc hash-sysv-compat
+  
+  # required by kde-apps/kdenlive
+  media-libs/mlt frei0r ffmpeg
+  media-video/ffmpeg libass
+  media-libs/opencv contribdnn contrib
 #
